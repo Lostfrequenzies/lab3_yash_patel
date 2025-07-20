@@ -1,0 +1,13 @@
+[project]
+name = "lab3-yash-patel"
+version = "0.1.0"
+dependencies = [
+  "pandas==2.2.2",
+  "seaborn==0.13.2",
+  "xgboost==2.1.1",
+  "scikit-learn==1.5.1",
+  "fastapi==0.115.0",
+  "pydantic==2.9.2",
+  "uvicorn==0.30.6",
+  "pytest==8.3.2"
+]
