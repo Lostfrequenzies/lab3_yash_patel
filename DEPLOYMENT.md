@@ -1,6 +1,7 @@
-## Cloud Deployment
-- Build and tag: Used PowerShell `docker build -t penguin-api .` and Docker Desktop to tag as us-central1-docker.pkg.dev/YOUR_PROJECT_ID/penguin-repo/penguin-api:latest
-- Push: Used Docker Desktop Push with gcloud auth
-- Deploy: Used GCP Console, set port 8080, allowed unauthenticated access
-- URL: [Insert URL, e.g., http://penguin-api-714185561055.us-central1.run.app/]
-- Issues: [e.g., None or specific errors]
+## Load Testing & Analysis
+- Tool: Locust, run manually via web UI with locustfile.py
+- Test 1 (10 users, 1 spawn): [e.g., 8 req/s, 150ms avg, 0% failure]
+- Test 2 (50 users, 5 spawn): [e.g., 20 req/s, 250ms avg, 2% failure]
+- Cloud Run Metrics: [e.g., 20 req/s, 260ms latency, 2% errors]
+- Bottlenecks: [e.g., High latency at 50 users, resolved with 8GiB memory]
+- Optimizations: [e.g., Increased memory to 8GiB, reduced latency]
